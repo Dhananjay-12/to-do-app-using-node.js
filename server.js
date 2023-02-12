@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
+const bosyParser = require('body-parser');
 const path = require('path');
+const bodyParser = require('body-parser');
 const port = process.env.PORT || 8080;
-const dotenv = require('dotenv');
+require('dotenv').config();
+require('./database/connection')();
 
+app.use(bodyParser.urlencoded({ extended: true }));
 //set template engine for ejs
 app.set('view engine', 'ejs');
 

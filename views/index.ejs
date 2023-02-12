@@ -1,0 +1,34 @@
+<%-include('header')%>
+<main>
+  <div class="card">
+    <h2 class="card-header">Hi bud! mark your important task here</h2>
+    <!-- Tasks sub cards -->
+    <div class="task-card">
+      <form action="/api/tasks" method="POST">
+        <label for="task">Task:</label>
+        <input
+          id="task"
+          placeholder="Enter your task here"
+          type="text"
+          name="task"
+        />
+
+        <!-- BUtton -->
+        <button type="submit" class="btn btn-primary text-white update">
+          Save
+        </button>
+
+        <!-- /BUtton -->
+      </form>
+    </div>
+  </div>
+  <div class="task-container card">
+    <h2 class="card-header">Your Tasks</h2>
+    <div class="task-card tablecard overflowTasks">
+      <table>
+        <%-include('show')%>
+      </table>
+    </div>
+  </div>
+</main>
+<%-include('footer')%>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>To-do App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <video autoplay muted loop class="bg-video">
+          <source src="css/background.mp4" type="video/mp4" />
+        </video>
+        <div class="logo-container">
+          <h1 class="logo">To-Do App</h1>
+        </div>
+        <div class="socials">
+          <div class="socials">
+            <a class="git" href="https://github.com/Dhananjay-12">
+              <img
+                src="data:image/png;base64,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"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

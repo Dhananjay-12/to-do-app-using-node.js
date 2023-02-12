@@ -1,0 +1,11 @@
+<% for(let i = 0; i < tasks.length; i++) { %>
+<thead>
+  <tr>
+    <td><%= i + 1 %></td>
+    <td><%= tasks[i].task %></td>
+    <td>
+      <input type="checkbox" name="completed" id="status" />
+    </td>
+  </tr>
+</thead>
+<% } %>
